@@ -1,0 +1,468 @@
+/******** Extra Bootstrap Column Padding ********/
+[class*="col-"] {
+  padding: 1rem;
+}
+
+/******** Bootstrap Mobile ********/
+.row, .container-fluid {
+margin-left: 0px!important;
+margin-right: 0px!important;
+}
+
+/*--- Fix for Fixed Navbar jumping on scroll --*/
+.fixed-top  {
+ -webkit-backface-visibility: hidden;
+}
+
+/******** Fixed Landing Page Section ********/
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.wrapper {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.heroImage {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+/******** iOS Fixed Background Image ********/
+.fixed-background {
+  position: relative;
+  width: 100%;
+}
+.fixed-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -999!important;
+}
+.fixed {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
+    color: #636c83;
+}
+
+.offset:before {
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+
+/********Navigation********/
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+}
+
+.navbar-brand img {
+    height: 2rem;
+}
+
+.navbar-nav li {
+    padding-right: .7rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+   color: #636c83;
+   padding-top: .8rem;    
+}
+
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link:hover {
+   color: #33d6ff;
+}
+
+
+.toggler-btn {
+    border: none;
+    padding: 5px;
+    transition: all 2s ease;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: #000;
+    transition: all 0.5s ease;
+}
+
+.change .bar1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/********Landing Page********/
+
+.heroImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 
+    0, 0.6)), url(img/writingBusinessDoc.jpg);
+}
+
+.caption {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.caption h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+
+.caption h2 {
+    font-size: 1.6rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+    border-width: medium;
+    border-radius: 5px;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+    margin-left: 0.7rem;
+}
+
+.btn-outline-warning {
+	color: #33d6ff;
+	border-color: #33d6ff;
+}
+
+.btn-outline-warning:hover {
+	background-color: #33d6ff;
+	border-color: #33d6ff;
+}	
+
+/**************Services Section*************/
+#services {
+    margin: 1rem auto 0.2rem auto;
+    padding: 2.5rem 0 4.5rem;
+}
+
+
+h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1.9rem;
+    margin-bottom: 1.9rem;
+}
+
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: #33d6ff;
+    margin: 0 auto 2rem;
+}
+
+.service svg.svg-inline--fa {
+    color: #33d6ff;
+}
+
+.service h3 {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    padding-bottom: .4rem;
+}
+
+.service p {
+   font-size: 1.1rem; 
+}
+
+.narrow {
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+.narrow h1 {
+    font-size: 2.4rem;
+  }
+
+
+/*******************Newsletter*****************/
+.newsletter {
+    background: #163a5c;
+    padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+}
+.newsletter h2 {
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.form-inline input {
+    margin-right: 1rem;
+}
+
+.btn-outline-info {
+  color: #33d6ff;
+  border-color: #33d6ff;
+  border-width: medium;
+  border-radius: 5px;
+}
+
+.btn-outline-info:hover {
+  background-color: #33d6ff;
+  border-color: #33d6ff;
+  border-width: medium;
+  border-radius: 5px;
+}
+
+
+/*******************About*****************/
+#about {
+  background: #e2e4e9;
+  overflow: hidden;
+}
+
+h3.heading-about {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.9rem;
+}
+
+.bio p {
+    font-size: 1.1rem;
+    padding-bottom: 2.5rem;
+}
+
+/**************Expertise*************/
+
+#expertise {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 
+    0, 0.6)), url(img/handshake.jpg)center/cover fixed no-repeat; 
+    overflow: hidden;
+    margin: 1rem auto 0.2rem auto;
+    padding: 2.5rem 0 4.5rem;
+}
+
+
+h3.heading-light {
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 1.9rem;
+    margin-bottom: 1.9rem;
+}
+
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: #33d6ff;
+    margin: 0 auto 2rem;
+}
+
+.feature svg.svg-inline--fa {
+    color: #33d6ff;
+}
+
+.feature h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;  
+}
+
+.feature p {
+    color: #fff;
+    font-size: 1.1rem; 
+    margin-top: 1rem; 
+    margin-bottom: 2.1rem;
+}
+
+
+/********************Testimonials********************/
+
+#testimonials {
+    padding: 100px;
+    background-color: #e2e4e9;
+}
+
+h3.heading-testimonials {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1.9rem;
+}
+
+blockquote {
+    font-size: 1.1rem;
+    padding-top: 1.5rem;
+}
+
+blockquote .svg-inline--fa {
+   color: #33d6ff;
+   margin: 1rem; 
+}
+
+.rounded-circle {
+    height: 130px;
+}
+
+.clients-hr {
+    border-top: 0.12rem solid #33d6ff;
+}
+
+/****************Footer / Contact*****************/
+#contact {
+  color: #fff;
+  background: #404654;
+}
+
+#contact {
+  padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.9rem;
+}
+
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: #33d6ff;
+    margin: 0 auto 2rem;
+}
+
+.btn-outline-warning btn-md{
+    color: #33d6ff;
+  border-color: #33d6ff;
+}
+
+.btn-md {
+    border-width: medium;
+    border-radius: 4px;
+}
+
+contact svg.svg-inline--fa {
+    font-size: 1.6rem;
+    margin: 1.2rem .5rem 0 0;
+}
+
+contact svg.svg-inline--fa:hover {
+    color: #33d6ff!important;
+}
+
+.turquoise-color{
+    color: #33d6ff;
+}
+
+.turquoise-color:hover{
+    color: #ff751a;
+}
+
+hr.socket {
+    width: 100%;
+    border-top: .2rem solid #666b71;
+    margin-top: 3rem;
+}
+
+/**************Media Queries*************/
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 10px 0;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-outline-info {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .caption h1 {
+    font-size: 2rem;
+  }
+
+.caption h2 {
+    font-size: 0.9rem;
+  }
+
+.btn-lg {
+    font-size: 0.9rem;
+  }
+
+.bio p {
+    font-size: 1rem;
+  }
+
+#testimonials {
+    padding: 20px;
+  }
+
+blockquote {
+    font-size: 1rem;
+  }
+
+.rounded-circle {
+    height: 120px;
+  }
+}
+
+
